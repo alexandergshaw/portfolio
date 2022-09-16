@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import { Terminal } from '../components/terminal/terminal'
+import { Screen } from '../components/screen/screen'
+import { WelcomeSequence } from '../components/welcome-sequence/welcome-sequence'
 
 export default function Home() {
   return (
@@ -10,7 +11,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <Terminal/>
+        <Screen>
+          <WelcomeSequence/>
+        </Screen>
       </main>
 
       <style jsx>{`
